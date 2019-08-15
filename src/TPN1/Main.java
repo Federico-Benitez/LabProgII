@@ -1,3 +1,5 @@
+package TPN1;
+
 import java.util.Scanner;
 
 public class Main {
