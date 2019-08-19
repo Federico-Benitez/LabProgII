@@ -73,6 +73,7 @@ public class Main {
         int media=0;
         //recorrer array
         for(int i=0; i<10; i=i+2){
+            mostrar(i);
             media+=array[i];
         }
         //calcular media
