@@ -13,7 +13,7 @@ public class UsoFacultad {
         int op=0;
         do{
             mostrar("-------------------------------------");
-            mostrar("****** MENU DE OPCIONES ******");
+            mostrar("\t****** MENU DE OPCIONES ******");
             mostrar("Ingrese 1 para agregar alumno");
             mostrar("Ingrese 2 para listar todos los estudiantes");
             mostrar("Ingrese 3 para buscar un estudiante por nombre");
