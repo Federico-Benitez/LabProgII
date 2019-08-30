@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="24924e25-fb03-4469-82c8-a4903c0fb59f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/trabajo1/Clase5/CuentaCorriente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trabajo1/Clase5/CuentaCorriente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Clase3/Main.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +45,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UsoCuenta">
+  <component name="RunManager" selected="Application.UsoFacultad">
     <configuration name="Clase5 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Clase5.Clase5" />
       <module name="trabajo1" />
@@ -64,19 +62,6 @@
     <configuration name="Clase5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Clase5" />
       <module name="trabajo1" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Ejercicio4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TPN3.Ejercicio4" />
-      <module name="trabajo1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="TPN3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -107,13 +92,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UsoFacultad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TPN5.UsoFacultad" />
+      <module name="trabajo1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TPN5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UsoFacultad" />
         <item itemvalue="Application.UsoCuenta" />
         <item itemvalue="Application.Clase5 (1)" />
         <item itemvalue="Application.Clase5" />
         <item itemvalue="Application.Ejercicio5" />
-        <item itemvalue="Application.Ejercicio4" />
       </list>
     </recent_temporary>
   </component>
