@@ -62,9 +62,10 @@ public class Facultad {
                     //Mover el alumno que estaba siguiente a la posicion actual
                     if (i + 1 < contEstudiantes) {//si el siguiente no es el ultimo
                         for (int x = i; x < contEstudiantes - 1; x++) {
-                            alumnos[x].setName(alumnos[x + 1].getName());//actualizar nombre
-                            alumnos[x].setNotaMedia(alumnos[x + 1].getNotaMedia());//actualizar nota media
-                        }//-----------la id del estudiante se modifica---------------
+                            alumnos[x].setName(alumnos[x+1].getName());//copiar nombre
+                            alumnos[x].setNotaMedia(alumnos[x+1].getNotaMedia());//copiar nota media
+                            alumnos[x].setNotaMedia(alumnos[x+1].getNotaMedia());//copiar id
+                        }
                     }
                     //el siguiente es el ultimo
                     contEstudiantes--;
