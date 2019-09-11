@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="24924e25-fb03-4469-82c8-a4903c0fb59f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TPN5/Facultad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TPN5/Facultad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/trabajo1/TPN5/Facultad.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/trabajo1/TPN5/Facultad.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +32,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UsoFacultad">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Clase5 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Clase5.Clase5" />
       <module name="trabajo1" />
@@ -67,12 +67,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ejercicio5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TPN3.Ejercicio5" />
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TPN6.Principal" />
       <module name="trabajo1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="TPN3.*" />
+          <option name="PATTERN" value="TPN6.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Principal" />
         <item itemvalue="Application.UsoFacultad" />
         <item itemvalue="Application.UsoCuenta" />
         <item itemvalue="Application.Clase5 (1)" />
         <item itemvalue="Application.Clase5" />
-        <item itemvalue="Application.Ejercicio5" />
       </list>
     </recent_temporary>
   </component>
