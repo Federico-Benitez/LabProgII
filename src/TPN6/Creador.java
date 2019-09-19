@@ -1,8 +1,6 @@
 package TPN6;
-
-import java.io.BufferedReader;
-import java.net.URLConnection;
 import java.util.*;
+
 
 public class Creador {//Clase para construir las contraseñas
 
@@ -84,8 +82,6 @@ public class Creador {//Clase para construir las contraseñas
             return "Insegura";
         }
         //comprobar si es segura
-
-
     }
 
     public void showPasswords(){
