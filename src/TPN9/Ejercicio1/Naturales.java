@@ -26,11 +26,6 @@ public class Naturales implements Numeros {
     }
 
     @Override
-    public double getValorcito() {
-        return this.valor;
-    }
-
-    @Override
     public Numeros multiplicar(Numeros a, Numeros b) {
         Naturales aNatural = (Naturales)a;
         Naturales bNatural = (Naturales)b;
