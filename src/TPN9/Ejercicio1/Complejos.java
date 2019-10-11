@@ -1,8 +1,8 @@
 package TPN9.Ejercicio1;
 
 public class Complejos implements Numeros {
+    String tipo = "Complejo";
     private double valorA,valorB;
-
 
 
     public Complejos(double valorA, double valorB) {
@@ -46,6 +46,9 @@ public class Complejos implements Numeros {
         return resultado;
     }
 
+    public void getValue(){
+        System.out.println(this.getValorA()+","+this.getValorB());
+    }
 
     public double getValorA() {
         return valorA;

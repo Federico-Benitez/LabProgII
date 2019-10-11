@@ -16,25 +16,35 @@ public class Main {
             int opcion = menu.cargarArray();
             switch (opcion){
                 case 1:
-                    arrayNumeros[i]=new Naturales(2);
-                    total+=arrayNumeros[i].
+                    arrayNumeros[i] = menu.crearNuevoNumeroNatural();
                     break;
                 case 2:
-                    mostrarString("ingresa a");
-                    double a = input.nextDouble();
-                    mostrarString("ingresa b");
-                    double b = input.nextDouble();
-                    arrayNumeros[i]=new Complejos(a,b);
+                    arrayNumeros[i] = menu.crearNuevoNumeroComplejo();
                     break;
                 default:
                     break;
             }
         }
-        //menu.mostrarOpciones();
-
-
-
-        mostrarString("Resultado: "+total.getValor());
+        int opcion;
+        do {
+            opcion=menu.mostrarOpciones();
+            switch (opcion){
+                case 1:
+                    menu.sumaTotalNaturales(arrayNumeros);
+                    break;
+                case 2:
+                    menu.sumaTotalComplejos(arrayNumeros);
+                    break;
+                case 3:
+                    menu.listarNaturalesOrdenados(arrayNumeros);
+                    break;
+                case 4:
+                    menu.listadoNumerosComplejos(arrayNumeros);
+                    break;
+                default:
+                    break;
+            }
+        }while (opcion!=5);
     }
 
     static void mostrarString(String p){
