@@ -1,5 +1,11 @@
 package TPN9.Ejercicio2;
 
-public interface Canchas {
-    String deporte = null;
+public abstract class Canchas {
+
+    String TipoDeporte ;
+
+
+    public String getTipoDeporte(){
+        return TipoDeporte;
+    }
 }
