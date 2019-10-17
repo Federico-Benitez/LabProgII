@@ -27,6 +27,10 @@ public class Espectadores extends Personas{
         this.silla = silla;
     }
 
+    public String getButaca(){
+        return "| Silla: "+getSilla()+"| Fila: "+getFila();
+    }
+
     @Override
     public String getTipo() {
         return "Espectador";
@@ -34,6 +38,6 @@ public class Espectadores extends Personas{
 
     @Override
     public String toString() {
-        return "Nombre: "+getNombre()+"| Edad: "+getEdad()+"| Silla: "+getSilla()+"| Fila: "+getFila();
+        return "Nombre: "+getNombre()+"| Edad: "+getEdad()+getButaca();
     }
 }
