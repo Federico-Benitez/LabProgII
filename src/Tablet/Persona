@@ -1,0 +1,66 @@
+import java.util.Scanner;
+
+public class Persona {
+    private String dni;
+    private int telefono;
+    private String nombre;
+    private String apellido;
+
+    public Persona(String dni, int telefono, String nombre, String apellido) {
+        this.dni = dni;
+        this.telefono = telefono;
+        this.nombre = nombre;
+        this.apellido = apellido;
+    }
+
+    public Persona cargarContacto(){
+        Scanner input = new Scanner(System.in);
+        mostrarString("Ingrese Nombre");
+        String name = input.nextLine();
+        mostrarString("Ingrese Apellido");
+        String surname = input.nextLine();
+        mostrarString("Ingrese DNI");
+        String dni = input.next();
+        mostrarString("Ingrese telefono");
+        int numPhone = input.nextInt();
+
+        Persona persona = new Persona(dni,numPhone,name,surname);
+        return persona;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public static void mostrarString(String p){
+        System.out.println(p);
+    }
+}
