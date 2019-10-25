@@ -1,0 +1,82 @@
+import java.util.*;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        HashMap<String  ,Persona> listaPersonas = new HashMap<String , Persona>();
+        int op =1;
+        do{
+            mostrarString("Desea cargar un contacto? <1>");
+            mostrarString("Desea eliminar un contacto? <2> ");
+            mostrarString("Desea listar? <3>");
+            mostrarString("Para salir <0>");
+            op=input.nextInt();
+
+            switch (op){
+                case 1:
+                    mostrarString("Ingrese Nombre");
+                    String name = input.next();
+                    mostrarString("Ingrese Apellido");
+                    String surname = input.next();
+                    mostrarString("Ingrese DNI");
+                    String dni = input.next();
+                    mostrarString("Ingrese telefono");
+                    int numPhone=0;
+                    boolean b = true;
+                    while (b){
+                        try{
+                            Scanner input2 = new Scanner(System.in);
+                            numPhone = input2.nextInt();
+                            b = false;
+
+                        }catch (Exception e){
+                            mostrarString("Error, no valido");
+                        }
+                    }
+
+
+                    Persona persona = new Persona(dni,numPhone,name,surname);
+                    listaPersonas.put(dni,persona);
+                    break;
+                case 2:
+                    mostrarString("Ingrese dni a eliminar");
+                    dni = input.next();
+                    listaPersonas.remove(dni);
+                    break;
+                case 3:
+                    for ( Persona personas : listaPersonas.values() ){
+                        System.out.println("Nombre:"+personas.getNombre());
+                        System.out.println("Apellido: "+personas.getApellido());
+                        System.out.println("Dni: "+personas.getDni());
+                        System.out.println("Numero Telefono: "+personas.getTelefono());
+                    }
+                    break;
+                default:
+                    mostrarString("Incorrecto");
+                    break;
+            }
+
+        }while (op!=0);
+
+    }
+
+
+
+    public static int eliminarContacto(){
+        mostrarString("Ingrese el dni");
+        Scanner input = new Scanner(System.in);
+        int dni = input.nextInt();
+        return dni;
+    }
+
+    public static void listarContactos(){
+        mostrarString("Listado de contactos");
+
+    }
+
+    public static void mostrarString(String p){
+        System.out.println(p);
+    }
+}
