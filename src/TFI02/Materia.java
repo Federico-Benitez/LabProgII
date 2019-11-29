@@ -2,7 +2,7 @@ import javax.sound.sampled.Line;
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class Materia implements Informacion{
+public class Materia implements Comparable<Materia>, Informacion{
     String nombre;
     Profesor titular;
     //coleccion estudiantes
@@ -65,5 +65,24 @@ public class Materia implements Informacion{
                 ", titular=" + titular +
                 ", coleccionEstudiantes=" + coleccionEstudiantes +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Materia o) {
+        if (this.getNombre().compareTo(o.getNombre()) > 0) return 1;
+        if (this.getNombre().compareTo(o.getNombre()) < 0) return -1;
+        return 0;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public Profesor getTitular() {
+        return titular;
+    }
+
+    public TreeSet<Estudiante> getColeccionEstudiantes() {
+        return coleccionEstudiantes;
     }
 }

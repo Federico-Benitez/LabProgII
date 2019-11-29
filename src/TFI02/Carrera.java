@@ -1,7 +1,7 @@
 import java.util.Iterator;
 import java.util.TreeSet;
 
-public class Carrera {
+public class Carrera implements  Comparable<Carrera>, Informacion {
     String nombre;
     //coleccion materia
     TreeSet<Materia> coleccionMaterias;
@@ -71,5 +71,29 @@ public class Carrera {
                 "nombre='" + nombre + '\'' +
                 ", coleccionMaterias=" + coleccionMaterias +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Carrera o) {
+        if (this.getNombre().compareTo(o.getNombre()) > 0) return 1;
+        if (this.getNombre().compareTo(o.getNombre()) < 0) return -1;
+        return 0;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public TreeSet<Materia> getColeccionMaterias() {
+        return coleccionMaterias;
+    }
+    @Override
+    public int verCantidad() {
+        return materias.size();
+    }
+
+    @Override
+    public String listarContenidos() {
+        return "Materias: " + materias + "\n";
     }
 }
