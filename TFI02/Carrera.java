@@ -50,6 +50,20 @@ public class Carrera {
 
     }
 
+    public void encontrarEstudiante(Estudiante estudianteAEliminar){
+        Iterator<Materia> iterador = coleccionMaterias.iterator();
+        while (iterador.hasNext()){
+            //recorrer cada materia
+            TreeSet<Estudiante> Estudiante = iterador.next().coleccionEstudiantes;
+            Iterator<Estudiante> iteradorEstudiantes = Estudiante.iterator();
+            while (iterador.hasNext()){
+                if (iteradorEstudiantes.next().getLegajo() == estudianteAEliminar.getLegajo()){
+                    iteradorEstudiantes.remove();
+                }
+            }
+        }
+    }
+
 
     @Override
     public String toString() {

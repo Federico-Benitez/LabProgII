@@ -27,11 +27,11 @@ public class Facultad implements Informacion{
 
     public void eliminarEstudiante(Estudiante estudiante){
         //eliminar al estudiante en cada materia en la que se inscribio
-        String carreraEstudiante
+        Iterator<Carrera> iteradorCarreras = coleccionCarreras.iterator();
 
-
-
-
+        while (iteradorCarreras.hasNext()){
+            iteradorCarreras.next().encontrarEstudiante(estudiante);
+        }
     }
 
     @Override
@@ -49,7 +49,7 @@ public class Facultad implements Informacion{
     public String listarContenidos() {
         Iterator<Carrera> iterador = coleccionCarreras.iterator();
         while(iterador.hasNext()){
-            System.out.println("Materia "+iterador.next().coleccionMaterias);
+            System.out.println("Materia "+iterador.next().toString());
         }
         return null;
     }
